@@ -22,3 +22,12 @@ include device/alcatel/idol3/board/*.mk
 
 # inherit from the proprietary version
 -include vendor/alcatel/idol3/BoardConfigVendor.mk
+
+#twrp
+#RECOVERY_VARIANT := twrp
+TW_THEME := portrait_hdpi
+TARGET_HW_DISK_ENCRYPTION := true
+TW_INCLUDE_CRYPTO := true
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
+#TWRP_INCLUDE_LOGCAT := true
+#TARGET_USES_LOGD := true
