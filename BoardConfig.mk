@@ -24,7 +24,7 @@ include device/alcatel/idol3/board/*.mk
 -include vendor/alcatel/idol3/BoardConfigVendor.mk
 
 #twrp
-#RECOVERY_VARIANT := twrp
+RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_CRYPTO := true
