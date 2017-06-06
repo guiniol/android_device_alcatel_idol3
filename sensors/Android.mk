@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),wt88047)
+ifeq ($(TARGET_DEVICE),idol3)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -32,6 +32,7 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libutils
 LOCAL_MODULE := sensors.msm8916
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := 64
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -59,6 +60,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)
 LOCAL_SRC_FILES := calmodule.cfg
+LOCAL_MULTILIB := 64
 
 include $(BUILD_PREBUILT)
 
