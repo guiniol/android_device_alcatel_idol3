@@ -1,5 +1,6 @@
 # Sensors
 PRODUCT_PACKAGES += \
+    libcalmodule_common \
     sensors.msm8916
 
 PRODUCT_COPY_FILES += \
